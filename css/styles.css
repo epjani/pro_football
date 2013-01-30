@@ -275,4 +275,17 @@ a:active            { color:inherit; text-decoration:inherit; }
     height:45px;
     margin-top:2px;
     background:url('../images/player_names_bg.png') no-repeat;
+    padding-left:92px;
+    padding-top:4px;
+    line-height:19px;
+}
+.player_names_bg .player_name
+{
+    text-align:center;
+    font-family:BebasNeueRegular, Arial, Helvetica;
+    width:126px;
+    float:left;
+    color:#c0c0c0;
+    font-size:22px;
+    margin-left:2px;
 }
