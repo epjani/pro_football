@@ -1,7 +1,18 @@
-﻿body 
+﻿@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body 
 {
     background:#000;
-    font-family:Arial, Helvetica;
+    font-family:BebasNeueRegular, Arial, Helvetica;
 }
 
 /**GLOBAL STYLES**/
@@ -43,6 +54,8 @@ a:active            { color:inherit; text-decoration:inherit; }
 {
     margin-left:190px;
     float:left;
+    position:relative;
+    z-index:1;
 }
 .header_description
 {
@@ -66,7 +79,7 @@ a:active            { color:inherit; text-decoration:inherit; }
 .content
 {
     width:1200px;
-    height:455px;
+    height:505px;
     margin:0 auto;
 }
 .content_wrapper .left_shadow
@@ -107,6 +120,7 @@ a:active            { color:inherit; text-decoration:inherit; }
     float:left;
     font-size:17px;
     padding:12px 0px;
+    font-family:Arial, Helvetica;
 }
 .opportunity .font_yellow img
 {
@@ -115,10 +129,39 @@ a:active            { color:inherit; text-decoration:inherit; }
 .player_bio .detailed_bio
 {
     float:left;
-    width:410px;
-    height:300px;
+    width:387px;
+    height:256px;
     background:url('../images/player_bio.png') no-repeat;
     margin-top:3px;
+    font-family:Arial, Helvetica;
+    padding:22px 7px 22px 15px;
+}
+.player_bio .detailed_bio .player_name, .player_bio .player_stats .stats
+{
+    font-size:24px;
+    font-family:BebasNeueRegular;
+    margin-bottom:12px;
+}
+.player_bio .detailed_bio .about_player, .player_bio .player_stats .about_player
+{
+    font-size:14px;
+    line-height:17px;
+}
+.player_bio .player_stats .about_player
+{
+    line-height:22px;
+}
+.lh_fix
+{
+    line-height:16px;
+    display:block;
+    margin:5px 0px;
+}
+.player_bio .detailed_bio .view_full_bio, .player_stats .view_more
+{
+    font-size:14px;
+    color:#0078a8;
+    line-height:30px;
 }
 .vertical_shadow
 {
@@ -130,8 +173,106 @@ a:active            { color:inherit; text-decoration:inherit; }
 .player_bio .player_stats
 {
     float:left;
-    height:300px;
-    width:180px;
+    height:256px;
+    width:143px;
     background: url('../images/player_stats.png') no-repeat;
     margin-top:4px;
+    font-family:Arial, Helvetica;
+    padding:22px 22px 22px 15px;
+}
+
+/***** long button sprites *****/
+.long_button
+{
+    margin-left:153px;
+    margin-top:15px;
+    float:left;
+}
+.long_btn_2
+{
+    background:url('../images/long_btn_sprites.png') no-repeat;
+    background-position: 0 -125px;
+    width: 906px;
+    height: 61px;
+}
+.long_btn
+{
+    background:url('../images/long_btn_sprites.png') no-repeat;
+    background-position: 0 0;
+    width: 906px;
+    height: 61px;
+}
+.long_btn_1
+{
+    background:url('../images/long_btn_sprites.png') no-repeat;
+    background-position: 0 -62px;
+    width: 906px;
+    height: 61px;
+}
+.long_btn_shadow
+{
+    margin-left:153px;
+    background:url('../images/long_btn_sprites.png') no-repeat;
+    background-position: 0 -187px;
+    width: 904px;
+    height: 27px;
+}
+.long_button .see_player
+{
+    display:block;
+    width:550px;
+    height:34px;
+    margin-left:50px;
+    margin-top:8px;
+    float:left;
+    text-align:center;
+    font-size:27px;
+    color:#f2e6c8;
+    padding-top:11px;
+    text-shadow: #000000 2px 2px 2px;
+}
+.long_button .fan_packages
+{
+    float:left;
+    width:256px;
+    height:34px;
+    margin-top:8px;
+    margin-left:25px;
+    text-align:center;
+    font-size:27px;
+    color:#f2e6c8;
+    padding-top:11px;
+    text-shadow: #000000 2px 2px 2px;
+}
+.footer_wrapper
+{
+    width:1062px;
+    margin:0 auto;
+    padding-top:25px;
+}
+.class_of
+{
+    width:908px;
+    margin-left:92px;
+    text-align:center;
+}
+.class_of_players
+{
+    margin-top:12px;
+    height:100px;
+}
+.player_img
+{
+    float:left;
+    margin-left:2px;
+}
+.player_img.first
+{
+    margin-left:0px !important;
+}
+.player_names_bg
+{
+    height:45px;
+    margin-top:2px;
+    background:url('../images/player_names_bg.png') no-repeat;
 }
