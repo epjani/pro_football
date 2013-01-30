@@ -1,0 +1,137 @@
+﻿body 
+{
+    background:#000;
+    font-family:Arial, Helvetica;
+}
+
+/**GLOBAL STYLES**/
+.font_yellow
+{
+    color: #d2aa41 !important;
+}
+.bold
+{
+    font-weight:bold;
+}
+.italic
+{
+    font-style:italic;
+}
+a:link              { color:inherit; text-decoration:inherit; }
+a:visited           { color:inherit; text-decoration:inherit; }
+a:hover             { color:inherit; text-decoration:inherit; }
+a:active            { color:inherit; text-decoration:inherit; }
+.clearfix
+{
+    clear:both;
+}
+.header_wrapper
+{
+    width:100%;
+    background-color:#424242;
+    height:150px;
+    margin-bottom:45px;
+}
+.header
+{
+    width:1200px;
+    height:150px;
+    margin:0 auto;
+    background: url('../images/header_bg.jpg') no-repeat;
+}
+#header_logo
+{
+    margin-left:190px;
+    float:left;
+}
+.header_description
+{
+    margin-left:40px;
+    width:519px;
+    height:167px;
+    background: url('../images/header_desc.png') no-repeat;
+    float:left;
+    margin-top:25px;
+}
+.yellow_divider
+{
+    height:2px;
+    width:100%;
+    background-color:#d2aa41;
+}
+.content_wrapper
+{
+    background:#111111;
+}
+.content
+{
+    width:1200px;
+    height:455px;
+    margin:0 auto;
+}
+.content_wrapper .left_shadow
+{
+    width:156px;
+    height:335px;
+    background: url('../images/left_shadow_main.png') no-repeat;
+    float:left;
+    margin-top:50px;
+}
+.content_wrapper .right_shadow
+{
+    width:128px;
+    height:335px;
+    background:url('../images/right_shadow_main.png') no-repeat;
+    float:left;
+    margin-top:50px;
+}
+.content_picture
+{
+    width:327px;
+    height:453px;
+    background: url('../images/content_picture_bg.png') no-repeat;
+    float:left;
+    margin-top:-47px;
+}
+.content_picture img
+{
+    margin-top:2px;
+}
+.content .player_bio
+{
+    float:left;
+    margin-left:-25px;
+}
+.content .player_bio .opportunity
+{
+    float:left;
+    font-size:17px;
+    padding:12px 0px;
+}
+.opportunity .font_yellow img
+{
+    margin-left:4px;
+}
+.player_bio .detailed_bio
+{
+    float:left;
+    width:410px;
+    height:300px;
+    background:url('../images/player_bio.png') no-repeat;
+    margin-top:3px;
+}
+.vertical_shadow
+{
+    height:297px;
+    width:12px;
+    background:url('../images/vertical_shadow_btw.png') no-repeat;
+    float:left;
+}
+.player_bio .player_stats
+{
+    float:left;
+    height:300px;
+    width:180px;
+    background: url('../images/player_stats.png') no-repeat;
+    margin-top:4px;
+}
